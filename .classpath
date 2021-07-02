@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.core.runtime-3.7.0.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.emf.ecore.change_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.emf.mapping.ecore2xml_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.uml2.common_1.5.0.v201005031530.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.uml2.uml_3.1.2.v201010261927.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.uml2.uml_3.2.0.v201105231350.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.uml2.uml.resources-3.1.0.v201005031530.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.osgi.core-4.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/rep/Model-basedWebTestRepairTool/diffutils-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/rep/Model-basedWebTestRepairTool/jsoup-1.12.1.jar"/>
+	<classpathentry kind="lib" path="D:/rep/Model-basedWebTestRepairTool/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/jtidy-r938.zip"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/jtidy-r938.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/commons-io-2.10.0-bin/commons-io-2.10.0/commons-io-2.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/commons-io-2.10.0-bin/commons-io-2.10.0/commons-io-2.10.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/commons-io-2.10.0-bin/commons-io-2.10.0/commons-io-2.10.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/commons-io-2.10.0-bin/commons-io-2.10.0/commons-io-2.10.0-tests.jar"/>
+	<classpathentry kind="lib" path="D:/rep/jtidy/commons-io-2.10.0-bin/commons-io-2.10.0/commons-io-2.10.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/rep/selenium-java-2.25.0.jar/selenium-java-2.25.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
