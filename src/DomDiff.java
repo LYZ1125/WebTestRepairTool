@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,6 +21,7 @@ import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -129,6 +131,7 @@ public class DomDiff {
 	static String firstfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myOldHtmlPages";
 	static String secondfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myNewHtmlPages";
 	static String testCasesPath = "D:\\rep\\Model-basedWebTestRepairTool\\myTestCases";
+	static String savedRepairedCasesPath="D:\\rep\\Model-basedWebTestRepairTool\\myRepairedTestCases";
 	static EmptyBorder emp = new EmptyBorder(10, 10, 10, 10);
 	Insets insets = new Insets(10, 10, 10, 10);
 	// static JTextPane textarea4;0
@@ -3417,12 +3420,13 @@ public class DomDiff {
 
 			StringBuilder sb = new StringBuilder();
 			while (line != null) {
-				sb.append(line);
+				sb.append(line+"\n");
 
 				line = buf.readLine();
 
 			}
 			String fileAsString = sb.toString();
+			String restOfFileString=fileAsString.substring(0,fileAsString.indexOf("{")+1);
 			fileAsString = fileAsString.substring(fileAsString.indexOf("{") + 1, fileAsString.lastIndexOf("}"));
 			System.out.println("Contents : " + fileAsString);
 			int i = 0;
@@ -3726,10 +3730,19 @@ public class DomDiff {
 				}
 
 			}
+			//print a executable file
+			System.out.println(restOfFileString);
 			for (int j = 0; j < listTestCasesRepaired.size(); j++) {
 				System.out.println(listTestCasesRepaired.get(j));
 			}
-
+			System.out.println("}");
+			//merge listTestCasesRepaired
+			String listTestCasesRepairedForPrintString=restOfFileString;
+			for(int index=0;index<listTestCasesRepaired.size();index++) {
+				listTestCasesRepairedForPrintString+=listTestCasesRepaired.get(index);
+			}
+			listTestCasesRepairedForPrintString+="}";
+			saveToJavaFile(listTestCasesRepairedForPrintString,savedRepairedCasesPath+"\\"+filename.substring(filename.lastIndexOf("\\")));
 			try {
 				if (wontrun == true) {
 					System.out.println("\n\nThe test WONT run on modified version");
@@ -3774,6 +3787,44 @@ public class DomDiff {
 		} catch (IOException e) {
 
 			e.printStackTrace();
+		}
+	}
+	public static void saveToJavaFile(String saveString, String path) {
+
+		FileOutputStream fileOutputStream=null;
+		File file;
+
+		try {
+			String content = saveString;
+			System.out.println(path);
+			file = new File(path);
+
+			// if file doesnt exists, then create it
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			fileOutputStream = new FileOutputStream(file);
+
+			// get the content in bytes
+			byte[] contentInBytes = content.getBytes();
+
+			fileOutputStream.write(contentInBytes);
+			fileOutputStream.flush();
+			fileOutputStream.close();
+
+			System.out.println("Done");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if (fileOutputStream != null) {
+					fileOutputStream.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
