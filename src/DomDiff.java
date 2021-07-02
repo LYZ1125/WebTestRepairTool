@@ -53,6 +53,8 @@ import difflib.Patch;
  * @author Javaria Imtiaz
  * @version 1.0
  */
+
+
 public class DomDiff {
 
 	final static boolean shouldFill = true;
@@ -3701,7 +3703,7 @@ public class DomDiff {
 									if (existsinselect == true || existsinradio == true) {
 										break;
 									}
-								}
+								} 
 
 								listTestCasesRepaired.add(tempvar);
 							}
