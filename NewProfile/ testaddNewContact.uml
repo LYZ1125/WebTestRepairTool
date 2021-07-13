@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_KgjMANl2EeuqwMzYMtNuNg" name="Demo Package">
-  <packagedElement xmi:type="uml:Activity" xmi:id="_KglBMNl2EeuqwMzYMtNuNg" name=" testaddNewContact">
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBMdl2EeuqwMzYMtNuNg" name="action1"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBMtl2EeuqwMzYMtNuNg" name="action2"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBM9l2EeuqwMzYMtNuNg" name="action3"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBNNl2EeuqwMzYMtNuNg" name="action4"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBNdl2EeuqwMzYMtNuNg" name="action5"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBNtl2EeuqwMzYMtNuNg" name="action6"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBN9l2EeuqwMzYMtNuNg" name="action7"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBONl2EeuqwMzYMtNuNg" name="action8"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBOdl2EeuqwMzYMtNuNg" name="action9"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBOtl2EeuqwMzYMtNuNg" name="action10"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBO9l2EeuqwMzYMtNuNg" name="action11"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBPNl2EeuqwMzYMtNuNg" name="action12"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBPdl2EeuqwMzYMtNuNg" name="action13"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBPtl2EeuqwMzYMtNuNg" name="action14"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBP9l2EeuqwMzYMtNuNg" name="action15"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBQNl2EeuqwMzYMtNuNg" name="action16"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBQdl2EeuqwMzYMtNuNg" name="action17"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBQtl2EeuqwMzYMtNuNg" name="action18"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBQ9l2EeuqwMzYMtNuNg" name="action19"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBRNl2EeuqwMzYMtNuNg" name="assert"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBRdl2EeuqwMzYMtNuNg" name="wait20"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_KglBRtl2EeuqwMzYMtNuNg" name="action21"/>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_W6bzgNsbEeuKCZgdvMh50g" name="Demo Package">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_W6dosNsbEeuKCZgdvMh50g" name=" testaddNewContact">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dosdsbEeuKCZgdvMh50g" name="action1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dostsbEeuKCZgdvMh50g" name="action2"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dos9sbEeuKCZgdvMh50g" name="action3"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dotNsbEeuKCZgdvMh50g" name="action4"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dotdsbEeuKCZgdvMh50g" name="action5"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dottsbEeuKCZgdvMh50g" name="action6"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dot9sbEeuKCZgdvMh50g" name="action7"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6douNsbEeuKCZgdvMh50g" name="action8"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6doudsbEeuKCZgdvMh50g" name="action9"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6doutsbEeuKCZgdvMh50g" name="action10"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dou9sbEeuKCZgdvMh50g" name="action11"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dovNsbEeuKCZgdvMh50g" name="action12"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dovdsbEeuKCZgdvMh50g" name="action13"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dovtsbEeuKCZgdvMh50g" name="action14"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dov9sbEeuKCZgdvMh50g" name="action15"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dowNsbEeuKCZgdvMh50g" name="action16"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dowdsbEeuKCZgdvMh50g" name="action17"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dowtsbEeuKCZgdvMh50g" name="action18"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6dow9sbEeuKCZgdvMh50g" name="action19"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6doxNsbEeuKCZgdvMh50g" name="assert"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6doxdsbEeuKCZgdvMh50g" name="wait20"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_W6doxtsbEeuKCZgdvMh50g" name="action21"/>
   </packagedElement>
 </uml:Package>

@@ -128,8 +128,8 @@ public class DomDiff {
 	static ArrayList<SelectboxArray> selectlistnew = new ArrayList<SelectboxArray>();
 	static ArrayList<SelectboxArray> radiolistold = new ArrayList<SelectboxArray>();
 	static ArrayList<SelectboxArray> radiolistnew = new ArrayList<SelectboxArray>();
-	static String firstfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myOldHtmlPages";
-	static String secondfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myNewHtmlPages";
+	static String firstfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myNewHtmlPages";
+	static String secondfilepath = "D:\\rep\\Model-basedWebTestRepairTool\\myOldHtmlPages";
 	static String testCasesPath = "D:\\rep\\Model-basedWebTestRepairTool\\myTestCases";
 	static String savedRepairedCasesPath="D:\\rep\\Model-basedWebTestRepairTool\\myRepairedTestCases";
 	static EmptyBorder emp = new EmptyBorder(10, 10, 10, 10);
@@ -500,9 +500,6 @@ public class DomDiff {
 
 				int sizeoriginal = Integer.parseInt(orig[1].replace("size: ", "").trim());
 				int sizerevised = Integer.parseInt(rev[1].replace("size: ", "").trim());
-				// System.out.println(num);
-				System.out.println(delta.toString());
-				// System.out.println(delta.toString());
 				if (sizeoriginal == 0) {
 					System.out.println(delta.getRevised().getLines() + " This is non existent");
 					String line = delta.getRevised().getLines().toString().replace("[", "");
@@ -758,9 +755,6 @@ public class DomDiff {
 
 						} else {
 							for (int i = 0; i < delta.getRevised().getLines().size()&&i<delta.getOriginal().size(); i++) {
-								System.out.println(delta.getRevised().getLines());
-								System.out.println(delta.getRevised().getLines().get(i));
-								System.out.println(delta.getRevised().getLines().get(i).toString().indexOf(" type"));
 								if ((delta.getRevised().getLines().get(i).toString().contains("<input") && delta
 										.getRevised().getLines().get(i).toString()
 										//delta.getRevised().getLines().get(i).toString().indexOf(" type")->0
@@ -971,25 +965,16 @@ public class DomDiff {
 
 				root = doc1.getDefaultRootElement();
 				element = root.getElement(num);
-//            try {
-//				System.out.println(doc1.getText(element.getStartOffset(),element.getEndOffset()-element.getStartOffset()));
-//			} catch (BadLocationException e) {
-//				
-//				e.printStackTrace();
-//			}
 				int start = element.getStartOffset();
 				int end = element.getEndOffset();
 
 				try {
 
 					hold = doc1.getText(start, end - start);
-					// System.out.println(hold);
 					doc1.remove(start, end - start);
 					if (exists) {
 						doc1.insertString(start, hold, null);
 						System.out.println("INSIDE EXISTS");
-						// doc3.insertString(0, delta.toString() + " exists but position is different
-						// \n", null);
 					} else {
 						doc1.insertString(start, hold, keyWord);
 						System.out.println("NOT INSIDE EXISTS");
@@ -1105,9 +1090,7 @@ public class DomDiff {
 						if (listOfFiles[i].isFile()) {
 							System.out.println(
 									"==========================================================================================");
-//							doc3.insertString(doc3.getLength(), "line0", keyWordErrorLine);
 							checkTestCase(listOfFiles[i].toString());
-//							doc3.insertString(doc3.getLength(), "line1", keyWordErrorLine);
 
 						} else if (listOfFiles[i].isDirectory()) {
 							System.out.println("Directory " + listOfFiles[i].getName());
@@ -1404,7 +1387,6 @@ public class DomDiff {
 //											deltaRevise.getRevised().getLines().toString(), "name");
 
 								revisedAttribute = revised.get(j);
-//								doc3.insertString(doc3.getLength(), "\nname\n", keyWordBold);
 
 								break;
 
@@ -1417,7 +1399,6 @@ public class DomDiff {
 //											deltaRevise.getRevised().getLines().toString(), "id");
 
 								revisedAttribute = revised.get(j);
-//								doc3.insertString(doc3.getLength(), "\n id\n"+"this id is :"+originalData.get(i)+"  other id is "+nameValueOfRevised+"\n", keyWordBold);
 
 
 								break;
@@ -1432,7 +1413,6 @@ public class DomDiff {
 //											deltaRevise.getRevised().getLines().toString(), "value");
 
 								revisedAttribute = revised.get(j);
-//								doc3.insertString(doc3.getLength(), "\nvalue\n", keyWordBold);
 
 								break;
 
@@ -1446,14 +1426,12 @@ public class DomDiff {
 //											deltaRevise.getRevised().getLines().toString(), "href");
 
 								revisedAttribute = revised.get(j);
-//								doc3.insertString(doc3.getLength(), "\n href\n", keyWordBold);
 
 								break;
 
 							}
 
 							else {
-//								doc3.insertString(doc3.getLength(), "\n score\n", keyWordBold);
 
 								score = similarityFinder.score(originalData.get(i), revised.get(j));
 								System.out.println("Original: - " + originalAttribute + "\n Revised: - "
@@ -1465,26 +1443,15 @@ public class DomDiff {
 									}
 
 								}
-//								doc3.insertString(doc3.getLength(), "\n this is other line . the namevalueoforighnal is :"+originalData.get(i)+"the namevalueofrevised:"+revised.get(j)+"score"+score+"\n", keyWordGray);
 
 
 
 							}
 
-							// score = score + id_score + name_score + value_score + href_score;
 
 						}
 
 					}
-					//添加
-//					if (nameValueOfOriginal=="claroFormId") {
-//					doc3.insertString(doc3.getLength(), "this is runing ", keyWordGray);
-//						if (nameValueOfOriginal.contains("claroFormId")) {
-//							doc3.insertString(doc3.getLength(), "nameValueOfOriginal is :" +nameValueOfOriginal+"revisedAttribut is :"+revisedAttribute+"\n", keyWordBold);
-
-//						}
-	
-//					}
 
 					System.out.println("Finding Similarity between the Attributes");
 					System.out.println("");
@@ -2467,7 +2434,6 @@ public class DomDiff {
 
 			else {
 				System.out.println("INSIDE ELSEEEEEE");
-				//修改
 //				List<String> original = fileToLines1("E:\\temmp\\old.html");
 //				List<String> revised = fileToLines2("E:\\temmp - Copy\\new.html");
 				List<String> original =fileToLines1("C:\\GeneratedFiles\\file2Folder1.html");
@@ -3432,12 +3398,11 @@ public class DomDiff {
 			int i = 0;
 			while (true) {
 				if (fileAsString.contains(";")) {
-					//					listTestCases.add(fileAsString.substring(0, fileAsString.indexOf(";")));->+1否则会没有‘;’
 					
 					listTestCases.add(fileAsString.substring(0, fileAsString.indexOf(";")+1));
 					fileAsString = fileAsString.substring(fileAsString.indexOf(";") + 1);
 					System.out.println("Contents : " + listTestCases.get(i));
-					if (listTestCases.get(i).contains(".findElement")) {//只考虑find element里面的
+					if (listTestCases.get(i).contains(".findElement")) {
 						String tempvar = "";
 						if (listTestCases.get(i).contains("By.id")) {
 							tempvar = listTestCases.get(i).substring(listTestCases.get(i).indexOf("By.id") + 5).trim();
@@ -3811,7 +3776,6 @@ public class DomDiff {
 			fileOutputStream.write(contentInBytes);
 			fileOutputStream.flush();
 			fileOutputStream.close();
-
 			System.out.println("Done");
 
 		} catch (IOException e) {

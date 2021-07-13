@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Kor0UNl2EeuqwMzYMtNuNg" name="NewProfile/ testaddNewContact.uml">
-  <profileApplication xmi:id="_Kor0Udl2EeuqwMzYMtNuNg">
-    <eAnnotations xmi:id="_Kor0Utl2EeuqwMzYMtNuNg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_XIzmsNsbEeuKCZgdvMh50g" name="NewProfile/ testaddNewContact.uml">
+  <profileApplication xmi:id="_XIzmsdsbEeuKCZgdvMh50g">
+    <eAnnotations xmi:id="_XIzmstsbEeuKCZgdvMh50g" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="NewProfile/Profile.profile.uml#_iPrO7VFrEeqkyP-RrqXz6g"/>
     </eAnnotations>
     <appliedProfile href="NewProfile/Profile.profile.uml#_iPrO61FrEeqkyP-RrqXz6g"/>
